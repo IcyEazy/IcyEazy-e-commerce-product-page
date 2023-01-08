@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navs">
+          <img id="open-btn" class="mobile" src="./images/icon-menu.svg" alt="menu">
+          <img class="logo" src="./images/logo.svg" alt="logo">
+          <ul class="desktop">
+            <li><a href="#">Collections</a></li>
+            <li class="men-abt"><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li class="men-abt"><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navs">
+          <p id="cart-icon"><img src="./images/icon-cart.svg" alt="cart"> <span class="order-num"></span></p>
+          <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+        </div>
+      </nav>
+    </header>
+    <hr class="desktop">
+    <main>
+      <div class="mobile">
+        <div class="mob-menu hide">
+          <img id="close-btn" class="close" src="./images/icon-close.svg" alt="close">
+          <p><a href="#">Collections</a></p>
+          <p><a href="#">Men</a></p>
+          <p><a href="#">Women</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+        <div class="checkout-cart hide">
+          <div class="cart-head">
+            Cart
+          </div>
+          <hr>
+          <div class="checkout">
+            <div class="checkout-info">
+              <img class="checkout-thumb" src="" alt="thumb-1">
+              <div>
+                <p class="cart-type-name"></p>
+                <p class="typ">$<span class="cart-price"></span> x <span class="qty-val"></span> <span class="total-amount">$<span class="cart-total"></span></span></p>
+              </div>
+              <img class="delete" src="./images/icon-delete.svg" alt="delete">
+            </div>
+            <button type="submit">Checkout</button>
+          </div>
+          <div class="empty hide">
+            Your cart is empty.
+          </div>
+        </div>
+        <div class="mob-prod-cont">
+          <div class="prod-seek-btn">
+            <div class="prod">
+              <img class="images imgs" src="./images/image-product-1.jpg" alt="image-1">
+            </div>
+            <div class="seek-btns">
+              <div class="prev-btn"><img src="./images/icon-previous.svg" alt="prev"></div>
+              <div class="next-btn"><img src="./images/icon-next.svg" alt="next"></div>
+            </div>
+          </div>
+          <div class="prod-info">
+            <p class="comp">Sneaker Company</p>
+            <h2 class="type">Fall Limited Edition Sneakers</h2>
+            <p class="info">
+              These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they&apos;ll withstand everything the weather can offer.
+            </p>
+            <div class="price-discount">
+              <div class="disc">
+                <p class="disc-prc">$<span class="disc-price">125.00</span></p>
+                <p class="disc-percent"><span class="percent">50</span> %</p>
+              </div>
+              <p class="actual-price">$<span class="act-price-val">250.00</span></p>
+            </div>
+            <div class="quantity">
+              <div class="minus"><img src="./images/icon-minus.svg" alt="minus"></div>
+              <p class="qty">0</p>
+              <div class="plus"><img src="./images/icon-plus.svg" alt="plus"></div>
+            </div>
+            <button class="add-to-cart-btn" type="submit"><img src="./images/icon-cart.svg" alt="cart"> Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop">
+        <div class="checkout-cart hide">
+          <div class="cart-head">
+            Cart
+          </div>
+          <hr>
+          <div class="checkout">
+            <div class="checkout-info">
+              <img class="checkout-thumb" src="" alt="thumb-1">
+              <div>
+                <p class="cart-type-name"></p>
+                <p class="typ">$<span class="cart-price"></span> x <span class="qty-val"></span> <span class="total-amount">$<span class="cart-total"></span></span></p>
+              </div>
+              <img class="delete" src="./images/icon-delete.svg" alt="delete">
+            </div>
+            <button type="submit">Checkout</button>
+          </div>
+          <div class="empty hide">
+            Your cart is empty.
+          </div>
+        </div>
+        <div class="light-box hide">
+          <div class="lightbox">
+            <div class="lightbox-content">
+              <img class="close" src="./images/icon-close.svg" alt="close">
+              <div><img id="light-main-img" class="m-img imgs" src="" alt="prod-1"></div>
+              <div class="light-img-seek">
+                <div class="prev-btn light-seek"><img src="./images/icon-previous.svg" alt="prev"></div>
+                <div class="next-btn light-seek"><img src="./images/icon-next.svg" alt="next"></div>
+              </div>
+              <div class="prod-thumb-imgs">
+                <div class="thumb-div"><img id="light-thumb-1" class="desk-thumb-imgs" src="" alt="thumb-1"></div>
+                <div class="thumb-div"><img id="light-thumb-2" class=" desk-thumb-imgs" src="" alt="thumb-2"></div>
+                <div class="thumb-div"><img id="light-thumb-3" class=" desk-thumb-imgs" src="" alt="thumb-3"></div>
+                <div class="thumb-div"><img id="light-thumb-4" class=" desk-thumb-imgs" src="" alt="thumb-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deskt-prod">
+          <div class="desk-prod-content">
+            <div class="desk-prod-imgs">
+              <div class="main-prod-img">
+                <img id="main-img" class="m-img imgs" src="./images/image-product-1.jpg" alt="prod-1">
+              </div>
+              <div class="prod-thumb-imgs">
+                <div class="thumb-div"><img id="thumb-1" class="desk-thumb-imgs" src="./images/image-product-1-thumbnail.jpg" alt="thumb-1"></div>
+                <div class="thumb-div"><img id="thumb-2" class=" desk-thumb-imgs" src="./images/image-product-2-thumbnail.jpg" alt="thumb-2"></div>
+                <div class="thumb-div"><img id="thumb-3" class=" desk-thumb-imgs" src="./images/image-product-3-thumbnail.jpg" alt="thumb-3"></div>
+                <div class="thumb-div"><img id="thumb-4" class=" desk-thumb-imgs" src="./images/image-product-4-thumbnail.jpg" alt="thumb-4"></div>
+              </div>
+            </div>
+            <div class="desk-prod-info">
+              <p class="comp">Sneaker Company</p>
+              <h2 class="type">Fall Limited Edition Sneakers</h2>
+              <p class="info">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they&apos;ll withstand everything the weather can offer.
+              </p>
+              <div class="desk-disc">
+                <p class="disc-prc">$<span class="disc-price">125.00</span></p>
+                <p class="disc-percent"><span class="percent">50</span> %</p>
+              </div>
+              <p class="actual-price">$<span class="act-price-val">250.00</span></p>
+              <div class="quan-btn">
+                <div class="quantity">
+                  <div class="minus"><img src="./images/icon-minus.svg" alt="minus"></div>
+                  <p class="qty">0</p>
+                  <div class="plus"><img src="./images/icon-plus.svg" alt="plus"></div>
+                </div>
+                <button class="add-to-cart-btn" type="submit"><img src="./images/icon-cart.svg" alt="cart"> Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="#">Adigun Isreal Collins</a>.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

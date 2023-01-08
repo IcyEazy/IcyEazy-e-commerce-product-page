@@ -126,6 +126,7 @@ deleteBtn.forEach(btn => {
         orderNum.textContent = "";
         cartDetails.forEach(details => details.classList.add("hide"));
         emptyCart.forEach(empty => empty.classList.add("show"));
+        quantity.forEach(qty => qty.innerHTML = "0");
     });
 });
 
